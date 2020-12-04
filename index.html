@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Frontend Mentor | Room homepage</title>
+
+    <style>
+        .attribution {
+            text-align: center;
+        }
+
+        .attribution a {
+            text-decoration: none;
+            background: linear-gradient(to right, #fff 0%, yellow 25%, orange 50%, orangered 75%, red 100%);
+            /* background: linear-gradient(to right, #fff 0%, hsl(0, 0%, 63%) 25%, hsl(0, 0%, 27%) 50%, #333 75%, hsl(0, 0%, 0%) 100%); */
+            background-size: 1000%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: slide 4s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                background-position: 0% 100%;
+            }
+
+            50% {
+                background-position: 100% 0%;
+            }
+
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <!-- Slider -->
+            <div class="showcase-container">
+                <nav class="nav__container">
+                    <div class="nav__burger">
+                        <img class="nav__burger-img" src="images/icon-hamburger.svg" alt="">
+                    </div>
+
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+
+                    <div class="nav__link">
+                        <a href="#">home</a>
+                        <a href="#">Shop</a>
+                        <a href="#">about</a>
+                        <a href="#">contact</a>
+                    </div>
+                </nav>
+
+                <div class="carousel-slide">
+                    <img class="slideshow-img" src="images/desktop-image-hero-1.jpg" alt="">
+                </div>
+
+                <div class="btn btn-slide-container">
+                    <div class="btn-slide" id="btn-prev">
+                        <img src="images/icon-angle-left.svg" alt="">
+                    </div>
+                    <div class="btn-slide" id="btn-next">
+                        <img src="images/icon-angle-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article -->
+            <div class="article">
+                <article class="article-header">
+                    <h1>Discover innovative ways to decorate</h1>
+                    <p>
+                        We provide unmatched quality, comfort, and style for property owners across the country. Our
+                        experts
+                        combine form and function in bringing your vision to life. Create a room in your own style with
+                        our
+                        collection and make your property a reflection of you and what you love.
+                    </p>
+                    <a href="#" class="btn btn-shownow">Show now
+                        <img src="images/icon-arrow.svg" alt="">
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <div class="img img__bottom-1">
+                <img src="images/image-about-dark.jpg" alt="">
+            </div>
+
+            <article class="about">
+                <h3>About our furniture</h3>
+                <p>
+                    Our multifunctional collection blends design and function to suit your individual taste. Make each
+                    room
+                    unique,
+                    or pick a cohesive theme that best express your interests and what inspires you. Find the furniture
+                    pieces you
+                    need, from traditional to contemporary styles or anything in between. Product specialists are
+                    available
+                    to help
+                    you create your dream space.
+                </p>
+            </article>
+
+            <div class="img img__bottom-2">
+                <img src="images/image-about-light.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Tawatchai-zoo" target="_blank">Tawatchai T Zoo</a>.
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 2fr 1fr;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    grid-template-rows: auto auto;
+  }
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+}
+
+.top .showcase-container {
+  position: relative;
+  height: 100%;
+}
+
+.top .showcase-container .nav__container {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 800px) {
+  .top .showcase-container .nav__container {
+    padding: 0;
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.top .showcase-container .nav__container .nav__burger {
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .top .showcase-container .nav__container .nav__burger {
+    display: inline-block;
+    padding: 2rem;
+  }
+}
+
+.top .showcase-container .nav__container .nav__burger > img {
+  width: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .top .showcase-container .nav__container .nav__burger > img {
+    width: 1.5rem;
+  }
+}
+
+.top .showcase-container .nav__container .logo {
+  height: 100%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+  .top .showcase-container .nav__container .logo {
+    text-align: center;
+    padding: 2rem;
+    left: 50%;
+  }
+}
+
+.top .showcase-container .nav__container .nav__link {
+  margin-left: 5rem;
+  transition: all 0.6s;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .top .showcase-container .nav__container .nav__link {
+    margin-left: 0;
+    transform: translateY(-200px);
+    color: black;
+    background-color: white;
+    width: 100%;
+    padding: 2.5rem;
+    padding-right: 1rem;
+    padding-left: 5rem;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.top .showcase-container .nav__container .nav__link > a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  .top .showcase-container .nav__container .nav__link > a {
+    font-size: 12px;
+  }
+}
+
+.top .showcase-container .nav__container .nav__link > a::after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: white;
+  display: block;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.2s;
+  position: absolute;
+}
+
+.top .showcase-container .nav__container .nav__link > a:hover::after {
+  width: 30px;
+}
+
+.top .showcase-container .nav__container .nav__link > a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .top .showcase-container .nav__container .nav__link > a:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.top .showcase-container .carousel-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.top .showcase-container .carousel-slide > img {
+  width: 100%;
+  height: 100%;
+}
+
+.top .showcase-container .btn-slide-container {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  z-index: 999;
+}
+
+.top .showcase-container .btn-slide-container > .btn-slide {
+  width: 4rem;
+  height: 5rem;
+  background-color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .top .showcase-container .btn-slide-container > .btn-slide {
+    height: 3rem;
+  }
+}
+
+.top .showcase-container .btn-slide-container > .btn-slide > img {
+  width: 1.5rem;
+  margin-top: 22px;
+}
+
+@media only screen and (max-width: 500px) {
+  .top .showcase-container .btn-slide-container > .btn-slide > img {
+    width: 0.8rem;
+    margin-top: 12px;
+  }
+}
+
+.top .showcase-container .btn-slide-container > .btn-slide:hover {
+  background-color: #454545;
+}
+
+.top .article {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.top .article .article-header {
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .top .article .article-header {
+    padding: 2rem;
+  }
+}
+
+.top .article .article-header h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .top .article .article-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.top .article .article-header p {
+  font-weight: 500;
+  color: #a1a1a1;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.top .article .article-header .btn-shownow {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.top .article .article-header .btn-shownow:hover {
+  opacity: 0.5;
+}
+
+.top .article .article-header .btn-shownow img {
+  margin-left: 1rem;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bottom .about {
+  padding: 1rem 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bottom .about {
+    grid-template-columns: 1fr;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom .about {
+    padding: 2rem;
+  }
+}
+
+.bottom h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom h3 {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+}
+
+.bottom p {
+  font-size: 12px;
+  color: #a1a1a1;
+  line-height: 1.5;
+}
+
+.bottom .img {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom .img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav__showing {
+  transform: translateY(0) !important;
+}
+/*# sourceMappingURL=main.css.map */
