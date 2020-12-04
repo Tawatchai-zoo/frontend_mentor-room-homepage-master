@@ -8,7 +8,7 @@ $very-dark-gray: hsl(0, 0%, 27%);
   padding: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
-  color: orangered;
+  color: $black;
 }
 
 .container {
@@ -166,7 +166,7 @@ $very-dark-gray: hsl(0, 0%, 27%);
       z-index: 999;
 
       & > .btn-slide {
-        width: 4rem;
+        width: 3rem;
         height: 5rem;
         background-color: $black;
         text-align: center;
@@ -174,16 +174,14 @@ $very-dark-gray: hsl(0, 0%, 27%);
         cursor: pointer;
 
         @media only screen and (max-width: 500px) {
-          // width: 0.5rem;
           height: 3rem;
         }
 
         & > img {
-          width: 1.5rem;
-          margin-top: 22px;
+          width: 0.8rem;
+          margin-top: 28px;
 
           @media only screen and (max-width: 500px) {
-            width: 0.8rem;
             margin-top: 12px;
           }
         }
@@ -201,14 +199,14 @@ $very-dark-gray: hsl(0, 0%, 27%);
     align-items: center;
 
     & .article-header {
-      padding: 3rem;
+      padding: 6rem;
 
       @media only screen and (max-width: 400px) {
         padding: 2rem;
       }
 
       & h1 {
-        font-weight: 800;
+        font-weight: 600;
         font-size: 2.5rem;
         margin-bottom: 2rem;
 

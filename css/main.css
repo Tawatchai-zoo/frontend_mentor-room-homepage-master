@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
+  color: black;
 }
 
 .container {
@@ -178,7 +179,7 @@
 }
 
 .top .showcase-container .btn-slide-container > .btn-slide {
-  width: 4rem;
+  width: 3rem;
   height: 5rem;
   background-color: black;
   text-align: center;
@@ -193,13 +194,12 @@
 }
 
 .top .showcase-container .btn-slide-container > .btn-slide > img {
-  width: 1.5rem;
-  margin-top: 22px;
+  width: 0.8rem;
+  margin-top: 28px;
 }
 
 @media only screen and (max-width: 500px) {
   .top .showcase-container .btn-slide-container > .btn-slide > img {
-    width: 0.8rem;
     margin-top: 12px;
   }
 }
@@ -215,7 +215,7 @@
 }
 
 .top .article .article-header {
-  padding: 3rem;
+  padding: 6rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -225,7 +225,7 @@
 }
 
 .top .article .article-header h1 {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
