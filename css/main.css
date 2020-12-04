@@ -119,7 +119,7 @@
 .top .showcase-container .nav__container .nav__link > a {
   text-decoration: none;
   color: inherit;
-  font-size: 16px;
+  font-size: 14px;
   display: inline-block;
   position: relative;
 }
@@ -215,7 +215,7 @@
 }
 
 .top .article .article-header {
-  padding: 6rem;
+  padding: 4.5rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -224,14 +224,14 @@
   }
 }
 
-.top .article .article-header h1 {
+.top .article .article-header h2 {
   font-weight: 600;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .top .article .article-header h1 {
+  .top .article .article-header h2 {
     font-size: 1.5rem;
   }
 }
